@@ -1,0 +1,9 @@
+{
+    "name": "Long comment ending",
+    "options": {
+        "handler": {},
+        "parser": {}
+    },
+    "html": "<meta id='before'><!-- text ---><meta id='after'>",
+    "expected": "<meta id=\"before\"/><!-- text ---><meta id=\"after\"/>"
+}

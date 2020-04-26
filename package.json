@@ -1,0 +1,43 @@
+{
+  "name": "htmlparser-generator",
+  "version": "0.0.1",
+  "description": "htmlparser2 to html generator",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest --coverage -u"
+  },
+  "author": "ousiri <ousiri@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "domelementtype": "^2.0.1",
+    "domutils": "^2.0.0",
+    "domhandler": "^3.0.0",
+    "entities": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^25.2.1",
+    "@types/node": "^13.13.2",
+    "@typescript-eslint/eslint-plugin": "^1.13.0",
+    "@typescript-eslint/parser": "^1.13.0",
+    "coveralls": "^3.0.14",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.0.0",
+    "jest": "^25.4.0",
+    "prettier": "^1.18.2",
+    "ts-jest": "^25.4.0",
+    "typescript": "^3.8.3",
+    "htmlparser2": "^4.1.0"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ousiri/htmlparser-generator.git"
+  },
+  "prettier": {
+    "tabWidth": 2
+  }
+}

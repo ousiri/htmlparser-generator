@@ -1,0 +1,11 @@
+{
+    "name": "CDATA",
+    "options": {
+        "handler": {},
+        "parser": {
+            "xmlMode": true
+        }
+    },
+    "html": "<tag><![CDATA[ asdf ><asdf></adsf><> fo]]></tag><![CD>",
+    "expected": "<tag><![CDATA[ asdf ><asdf></adsf><> fo]]></tag><![CD>"
+}

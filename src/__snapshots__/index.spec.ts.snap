@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Generator parseDOM 1`] = `
+Array [
+  <a
+    foo=""
+  >
+    <b>
+      <c>
+        ProcessingInstruction {
+          "data": "?foo",
+          "endIndex": null,
+          "name": "?foo",
+          "next": DataNode {
+            "data": "Yay!",
+            "endIndex": null,
+            "next": null,
+            "parent": <c>
+              [Circular]
+              [Circular]
+            </c>,
+            "prev": [Circular],
+            "startIndex": null,
+            "type": "text",
+          },
+          "parent": <c>
+            [Circular]
+            DataNode {
+              "data": "Yay!",
+              "endIndex": null,
+              "next": null,
+              "parent": <c>
+                [Circular]
+                [Circular]
+              </c>,
+              "prev": [Circular],
+              "startIndex": null,
+              "type": "text",
+            }
+          </c>,
+          "prev": null,
+          "startIndex": null,
+          "type": "directive",
+        }
+        DataNode {
+          "data": "Yay!",
+          "endIndex": null,
+          "next": null,
+          "parent": <c>
+            ProcessingInstruction {
+              "data": "?foo",
+              "endIndex": null,
+              "name": "?foo",
+              "next": [Circular],
+              "parent": <c>
+                [Circular]
+                [Circular]
+              </c>,
+              "prev": null,
+              "startIndex": null,
+              "type": "directive",
+            }
+            [Circular]
+          </c>,
+          "prev": ProcessingInstruction {
+            "data": "?foo",
+            "endIndex": null,
+            "name": "?foo",
+            "next": [Circular],
+            "parent": <c>
+              [Circular]
+              [Circular]
+            </c>,
+            "prev": null,
+            "startIndex": null,
+            "type": "directive",
+          },
+          "startIndex": null,
+          "type": "text",
+        }
+      </c>
+    </b>
+  </a>,
+]
+`;
