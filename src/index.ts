@@ -65,7 +65,7 @@ function dfs(node: Node[] | Node, options: GeneratorOptions): string {
     if (el.attribs && Object.keys(el.attribs).length) {
       ans += ' ' + Object.keys(el.attribs).map(key => {
         const val = el.attribs[key]
-        return key + (options.dumpEmptyAttri && !val ? '' : `="${escapeAttr(val, options.dumpEmptyAttri)}"`)
+        return key + (options.dumpEmptyAttri && !val ? '' : `="${escapeAttr(val, options.disableAttrEscape)}"`)
       }).join(' ')
     }
     if (el.children?.length) {
